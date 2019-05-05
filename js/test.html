@@ -1,0 +1,55 @@
+
+
+
+
+<input id="name" type="text" placeholder="Enter Name">
+<input id="designation" type="text" placeholder="Enter Designation">
+
+<button type="submit" id="Button">Enter Values</button>
+
+<ul id="list">
+    
+</ul>
+
+
+
+<script>
+
+        var developers = [];
+    
+        const btn = document.querySelector("#Button");
+    
+        btn.addEventListener('click', (e) => {
+            
+            e.preventDefault();
+            
+            var name = document.querySelector("#name").value;
+            var designation = document.querySelector("#designation").value;
+    
+            var valuesToPush = {"name": name, "designation": designation};
+    
+            developers.push(valuesToPush);
+    
+            console.log(developers);
+
+            const list = document.querySelector("#list");
+                    while (list.firstChild) {
+                    list.removeChild(list.firstChild);
+                }
+
+            for (i = 0; i < developers.length; i++) {
+
+                // empty list
+
+                // const list = document.querySelector("#list");
+                const li = document.createElement('li');
+                li.textContent = `Name: ${developers[i]["name"]} Designation: ${developers[i]["designation"]}`;
+                
+                list.appendChild(li);
+                
+            }    
+        })
+        
+    
+    
+    </script>

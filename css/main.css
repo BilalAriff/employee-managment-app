@@ -1,0 +1,76 @@
+body { 
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+    background-color: lightblue;
+}
+
+.main_title {
+    font-size: 70px;
+    font-weight: bolder;
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Card Design */
+
+.employee_card {
+    background-color: #fff;
+    border-radius: 12px;
+
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+
+
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.32);
+}
+
+.employee_card_header {
+    padding: 30px;
+    padding-bottom: 15px;
+}
+
+.card_employee_name {
+    font-size: 25px;
+    font-weight: bolder;
+    opacity: 0.7;
+    margin: 0px;
+
+}
+
+.card_employee_designation {
+    font-size: 15px;
+    font-weight: bolder;
+    opacity: 0.7;
+    margin: 0px;
+}
+.employee_card_body {
+    padding: 30px;
+}
+.card_employee_email {
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.card_employee_phone {
+    font-size: 18px;
+    opacity: 0.6;
+}
+.card_employee_salary {
+    font-size: 30px;
+    opacity: 0.6;
+    font-weight: bold;    
+}
+.card_employee_social_icons i {
+    font-size: 30px;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+
+.card_employee_social_icons i:hover {
+    font-size: 30px;
+    margin-right: 10px;
+    opacity: 0.6;
+    color: blue;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l12 m12">
+          <h1 class="main_title">Employee Manager App</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 m6 l6 right-align">
+            <div class="new-task-btn center">
+                <!-- Modal Trigger -->
+                <a class="btn-floating btn-large waves-effect waves-light #388e3c green darken-2 red modal-trigger add-btn" href="#new-task"><i style="font-size: 60px;" class="material-icons add-icon">add</i></a>
+             </div>
+            <!-- <a class="btn-floating btn-large waves-effect waves-light #388e3c green darken-2"><i class="material-icons">add</i></a> -->
+          </div>
+        <div class="col s6 m6 l6">
+          <form action="submit">
+              <div class="input-field">
+                <textarea id="search" class="materialize-textarea" data-length="120"></textarea>
+                <label for="search">Search</label>
+              </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- New Employee From -->
+      <!-- Add new Task Button -->
+
+     <!-- Modal Structure -->
+     <div class="container">
+        <div id="new-task" class="modal">
+           <div class="modal-content center">
+              <div class="row">
+                 <form id="new-task-form" class="col s12">
+                    <div class="row">
+                       <div class="input-field col s12">
+                          <input id="name" type="text" data-length="20">
+                          <label for="name">Enter your Name</label>
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="input-field col s12">
+                          <input id="designation" type="text" data-length="20">
+                          <label for="designation">Enter your Designation</label>
+                       </div>
+                    </div>
+                    <div class="row">
+                       <div class="input-field col s12">
+                          <input id="mail" type="text" class="materialize-textarea" data-length="120"></input>
+                          <label for="mail">Enter your Mail</label>
+                       </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                           <input id="phone" class="materialize-textarea" data-length="120"></input>
+                           <label for="phone">Enter your Phone Number</label>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="input-field col s12">
+                           <input id="salary" type="text" class="materialize-textarea" data-length="120"></input>
+                           <label for="salary">Enter your Salary</label>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="input-field col s12">
+                           <input id="skills" type="text" class="materialize-textarea" data-length="120"></input>
+                           <label for="skills">Enter your Skills</label>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="input-field col s12">
+                           <input id="linkedin" type="text" class="materialize-textarea" data-length="120"></input>
+                           <label for="linkedin">Enter your LinkedIn</label>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="input-field col s12">
+                           <input id="facebook" type="text" class="materialize-textarea" data-length="120"></input>
+                           <label for="facebook">Enter your Facebook</label>
+                        </div>
+                     </div>
+                    <div class="modal-footer">
+                       <a class="modal-close btn-floating btn-large waves-effect waves-light red"><i class="material-icons">close</i></a>
+                       <button type="submit" id="send" value="Submit" class="modal-close btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></button>
+                    </div>
+                 </form>
+              </div>
+           </div>
+           <!-- <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div> -->
+        </div>
+     </div>
+      <!-- New Employee Form Ends -->
+      
+      <!-- My New Card -->
+      
+     <div id="card_holder" class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <div class="employee_card">
+            <p class="card_employee_name">Your Name</p>
+            <p class="card_employee_designation">Some Details</p>
+            <hr>
+
+            <p class="card_employee_email">someone@gmail.com</p>
+            <p class="card_employee_phone">123141141414</p>
+            <p class="card_employee_Salary">$1245</p>
+
+            <i class="fab fa-github-square right-align"></i>
+            <i class="fab fa-facebook square right-align"></i>
+          </div>
+        </div>
+      </div>
+   </div>
+
+      
+
+    </div> <!-- Container Ends-->
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/app2.js"></script>
+  </body>
+</html>
+      

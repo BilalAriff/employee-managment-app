@@ -1,0 +1,30 @@
+<script>
+
+// RETRIVE DATA
+function getData () {
+        var returned_data = localStorage.getItem('developers');
+
+        if (returned_data !== null) {
+            return JSON.parse(returned_data);
+        }
+
+        else {
+            var emptyArray = [];
+            return emptyArray;
+        }
+    }
+// SAVE DATA
+
+function saveData(developers) {
+    localStorage.setItem('developers', JSON.stringify(developers));
+}
+
+
+
+var developers;
+developers = getData();
+developers.push( {"name":"Bilal", "Designation":"Developer"});
+saveData(developers);
+developers = getData();
+
+</script>   
